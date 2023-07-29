@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1705.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.PuzzleGame.Core", "Wpf.PuzzleGame.Core\Wpf.PuzzleGame.Core.csproj", "{D384B5C3-F3B7-46D1-AD30-AB565F404094}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.PuzzleGame.Core.Tests", "Wpf.PuzzleGame.Core.Tests\Wpf.PuzzleGame.Core.Tests.csproj", "{52C98D42-59FC-4087-B66C-62B0C551EE5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D384B5C3-F3B7-46D1-AD30-AB565F404094}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D384B5C3-F3B7-46D1-AD30-AB565F404094}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D384B5C3-F3B7-46D1-AD30-AB565F404094}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D384B5C3-F3B7-46D1-AD30-AB565F404094}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52C98D42-59FC-4087-B66C-62B0C551EE5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52C98D42-59FC-4087-B66C-62B0C551EE5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52C98D42-59FC-4087-B66C-62B0C551EE5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52C98D42-59FC-4087-B66C-62B0C551EE5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {406582F3-3F65-41FD-8A63-1B03A06A2F26}
+	EndGlobalSection
+EndGlobal
