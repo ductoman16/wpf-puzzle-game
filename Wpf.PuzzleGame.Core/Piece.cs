@@ -1,6 +1,5 @@
 ﻿namespace Wpf.PuzzleGame.Core;
-public class Class1
+
+public class Piece
 {
-
 }
-
