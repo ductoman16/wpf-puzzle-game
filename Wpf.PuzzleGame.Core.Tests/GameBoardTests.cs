@@ -4,7 +4,7 @@ namespace Wpf.PuzzleGame.Core.Tests;
 
 public class GameBoardTests
 {
-    private readonly GameBoard _board = new(8, 8);
+    private readonly GameBoard _board = new(3, 3);
 
     [Fact]
     public void CanConstructBySize()
@@ -43,5 +43,17 @@ public class GameBoardTests
         piece.Should().NotBeNull();
     }
 
+    [Fact]
+    public void Pieces_AfterFillingTwice_NotEqual()
+    {
+        _board.Fill();
 
+        var pieces1 = _board.Pieces.Clone();
+
+        _board.Fill();
+
+        var pieces2 = _board.Pieces.Clone();
+
+        pieces1.Should().NotBeEquivalentTo(pieces2);
+    }
 }

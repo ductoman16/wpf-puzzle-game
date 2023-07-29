@@ -1,5 +1,3 @@
 ﻿namespace Wpf.PuzzleGame.Core;
 
-public class Piece
-{
-}
+public record Piece(PieceType PieceType) { }
