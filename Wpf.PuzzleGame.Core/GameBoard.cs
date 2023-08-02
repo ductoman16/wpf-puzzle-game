@@ -1,4 +1,6 @@
-﻿namespace Wpf.PuzzleGame.Core;
+﻿using System.Drawing;
+
+namespace Wpf.PuzzleGame.Core;
 public class GameBoard
 {
     private readonly Random _random = new();
@@ -21,5 +23,24 @@ public class GameBoard
                 Pieces[x, y] = new Piece(type ?? throw new InvalidOperationException("Generated null piece."));
             }
         }
+    }
+
+    public void Swap(Point first, Point second)
+    {
+        var isXAdjacent = Math.Abs(first.X - second.X) <= 1;
+        var isYAdjacent = Math.Abs(first.Y - second.Y) <= 1;
+
+        if (!isXAdjacent || !isYAdjacent)
+        {
+            throw new InvalidOperationException();
+        }
+
+        (this[first], this[second]) = (this[second], this[first]);
+    }
+
+    public Piece this[Point point]
+    {
+        get => Pieces[point.X, point.Y];
+        set => Pieces[point.X, point.Y] = value;
     }
 }
